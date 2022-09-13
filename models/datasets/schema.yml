@@ -1,0 +1,27 @@
+version: 2
+sources:
+  - name: canonical
+    database: silicon-badge-359710
+    schema: dunzo_data
+    tables:
+        - name: sales
+        - name: purchases
+        - name: stock_flow
+        - name: stock_take
+        - name: stock_adjustment
+        - name: location_mapping
+        - name: category_subtag_mapping
+        - name: sku_mapping
+models:
+  - name: dim_cat_subtag_mapping
+  - name: dim_location
+  - name: dim_product_category
+    description: "Mapping of Product and Category"
+  - name: dim_products
+  - name: dim_warehouse
+  - name: fact_purchases
+  - name: fact_sales
+  - name: fact_sales_line_items
+  - name: fact_stock_adjustments
+  - name: fact_stock_flow
+  - name: fact_stock_take
