@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dbt_dunzo
+  annotations:
+    github.com/project-slug: chandu-zoomcamp/dbt_dunzo
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
